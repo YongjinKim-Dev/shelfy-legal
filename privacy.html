@@ -94,10 +94,11 @@ th { background: var(--cream); font-weight: 600; }
 <ol>
 <li>Information We Collect</li>
 <li>Why We Collect It</li>
-<li>Third-Party Sharing</li>
+<li>Information We Do Not Collect</li>
+<li>Service Providers &amp; Third-Party Sharing</li>
 <li>Data Retention</li>
 <li>Data Security</li>
-<li>Your Rights</li>
+<li>Your Rights (incl. California residents)</li>
 <li>Children's Privacy</li>
 <li>Advertising &amp; App Tracking Transparency</li>
 <li>Changes to This Policy</li>
@@ -121,14 +122,16 @@ th { background: var(--cream); font-weight: 600; }
 <li>Subscription status and transaction history</li>
 </ul>
 <p>RevenueCat does not receive your name, email, or payment card details. The actual payment is processed by Apple or Google.</p>
-<h3>1-3. AI usage metering (Cloud Functions)</h3>
+<h3>1-3. AI usage metering and Google Gemini (Cloud Functions)</h3>
 <p>When you use AI chat features, Firebase Cloud Functions invoke the Google Gemini API on your behalf. The following metadata is recorded in Firestore:</p>
 <ul>
 <li>Anonymous UID and request timestamps</li>
 <li>Token counts and model selection</li>
 <li>Result status (success / error code)</li>
 </ul>
-<p>The prompt body and AI response bodies are not stored on our servers. They are only transmitted while the request is in flight.</p>
+<p><strong>Shelfy does not store prompt bodies or AI response bodies on our servers.</strong> They are transmitted to Google only while the request is in flight.</p>
+<p><strong>Google's handling of AI content:</strong> Prompts and responses are sent to Google's Gemini API for processing. Google may log requests for short-term caching, quality and safety monitoring. According to Google's current policy for the paid Gemini API (used by Shelfy), your prompts are not used to train Google's models. See the <a href="https://ai.google.dev/gemini-api/terms">Google AI / Gemini API Additional Terms of Service</a> for details.</p>
+<p>Please avoid sending any personal, sensitive, or confidential information to the AI chat. Treat AI conversations as if they could be reviewed by a third-party provider.</p>
 <h3>1-4. Usage analytics (Firebase Analytics)</h3>
 <p>Firebase Analytics collects anonymous usage patterns:</p>
 <ul>
@@ -188,19 +191,33 @@ th { background: var(--cream); font-weight: 600; }
 </tr>
 </tbody>
 </table>
-<p>Analytics and log data are used only to improve Shelfy. Advertising is served by Google Mobile Ads as described in section 8.</p>
+<p>Analytics and log data are used only to improve Shelfy. Advertising is served by Google Mobile Ads as described in section 9.</p>
 <hr />
-<h2>3. Third-Party Sharing</h2>
-<p>Shelfy does not sell or rent personal information. We share data only with the following service providers as required to operate the app:</p>
+<h2>3. Information We Do Not Collect</h2>
+<p>Shelfy does not collect any of the following:</p>
 <ul>
-<li><strong>Google / Firebase</strong> (authentication, analytics, crash reporting, remote config, cloud functions, AI proxy) — https://policies.google.com/privacy</li>
-<li><strong>RevenueCat</strong> (subscription management and receipt validation) — https://www.revenuecat.com/privacy</li>
-<li><strong>Apple / Google Play</strong> (payment processing for in-app purchases)</li>
-<li><strong>Google Mobile Ads (AdMob)</strong> (ad serving) — https://policies.google.com/technologies/ads</li>
+<li>Real name, email address, phone number, or postal address from inside the app</li>
+<li>Government identifiers (Social Security Number, resident registration number, driver's license, passport)</li>
+<li>Payment card numbers or bank account details (processed entirely by Apple or Google)</li>
+<li>Biometric data (fingerprint, face scan, voiceprint)</li>
+<li>Precise location (GPS coordinates)</li>
+<li>Health, medical, financial, religious, political, or sexual orientation information</li>
+<li>Microphone or camera input</li>
+<li>Contacts, calendar, or photo library</li>
 </ul>
-<p>Each provider handles data under its own privacy policy; we recommend reviewing those policies for details.</p>
+<p>We do not sell your personal information and we do not share it with third parties for their own marketing.</p>
 <hr />
-<h2>4. Data Retention</h2>
+<h2>4. Service Providers &amp; Third-Party Sharing</h2>
+<p>Shelfy relies on a small number of service providers ("processors") to operate. Each provider is contractually bound to process data only for the purposes we specify:</p>
+<ul>
+<li><strong>Google / Firebase</strong> — authentication, analytics, crash reporting, remote config, cloud functions, AI (Gemini) proxy. Privacy policy: https://policies.google.com/privacy</li>
+<li><strong>RevenueCat</strong> — subscription management and receipt validation. Privacy policy: https://www.revenuecat.com/privacy</li>
+<li><strong>Apple / Google Play</strong> — payment processing for in-app purchases.</li>
+<li><strong>Google Mobile Ads (AdMob)</strong> — ad serving. Privacy policy: https://policies.google.com/technologies/ads</li>
+</ul>
+<p>We do not sell or rent your personal information to any third party.</p>
+<hr />
+<h2>5. Data Retention</h2>
 <ul>
 <li><strong>Cloud Functions audit logs &amp; AI metering:</strong> retained for up to 13 months, then aggregated or deleted.</li>
 <li><strong>Firebase Analytics events:</strong> retained according to your Firebase project configuration (default 14 months).</li>
@@ -210,7 +227,7 @@ th { background: var(--cream); font-weight: 600; }
 </ul>
 <p>When you request deletion (see section 6), personal records tied to the anonymous UID are removed from the Developer's servers unless retention is required by law.</p>
 <hr />
-<h2>5. Data Security</h2>
+<h2>6. Data Security</h2>
 <ul>
 <li>All traffic between the app and Firebase / Cloud Functions is protected by HTTPS (TLS).</li>
 <li>Server-side access follows the least-privilege principle. API secrets are stored in Firebase Secret Manager, not in client code.</li>
@@ -218,21 +235,36 @@ th { background: var(--cream); font-weight: 600; }
 </ul>
 <p>No method of electronic storage or transmission is completely secure. We continuously monitor and improve our security controls.</p>
 <hr />
-<h2>6. Your Rights</h2>
+<h2>7. Your Rights</h2>
 <p>You have the right to:</p>
 <ul>
 <li>Request access to data we hold that is linked to your anonymous UID.</li>
 <li>Request correction of inaccurate data.</li>
 <li>Request deletion of server-side data tied to your UID.</li>
 <li>Request restriction of processing.</li>
+<li>Object to processing.</li>
+<li>Receive your data in a portable format.</li>
 </ul>
 <p>To exercise these rights, email <strong>yongjin.dev@gmail.com</strong> with the UID shown in the app's settings/about page. We respond within 30 days.</p>
 <p>On-device data can be removed at any time by uninstalling Shelfy or clearing the app's storage.</p>
+<h3>7-1. California residents (CCPA / CPRA)</h3>
+<p>California residents have additional rights under the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA):</p>
+<ul>
+<li><strong>Right to know</strong> what personal information we collect and how it is used.</li>
+<li><strong>Right to delete</strong> personal information we hold about you.</li>
+<li><strong>Right to correct</strong> inaccurate personal information.</li>
+<li><strong>Right to opt out of sale or sharing</strong> of personal information.</li>
+<li><strong>Right to limit use of sensitive personal information.</strong></li>
+<li><strong>Right to non-discrimination</strong> for exercising any of these rights.</li>
+</ul>
+<p><strong>Shelfy does not sell or share personal information</strong> for cross-context behavioral advertising, and we do not collect sensitive personal information as defined by CCPA. To exercise your rights, email <strong>yongjin.dev@gmail.com</strong>.</p>
+<h3>7-2. EEA / UK residents (GDPR)</h3>
+<p>If you are in the European Economic Area or the United Kingdom, you can also lodge a complaint with your local data protection authority. Our lawful basis for processing is (a) performance of the Service contract under these Terms, and (b) our legitimate interest in maintaining a functional, abuse-resistant product.</p>
 <hr />
-<h2>7. Children's Privacy</h2>
-<p>Shelfy is not directed to children under the age of 14 (in line with South Korea's Personal Information Protection Act). We do not knowingly collect personal information from children under 14. If you believe a child under 14 has used the app, please contact yongjin.dev@gmail.com and we will delete any associated data.</p>
+<h2>8. Children's Privacy</h2>
+<p>Shelfy is not directed to children. We do not knowingly collect personal information from children under 13 (United States — COPPA) or under 16 (European Economic Area and United Kingdom — GDPR minimum). If you believe a child below these ages has used the app, please contact yongjin.dev@gmail.com and we will delete any associated data.</p>
 <hr />
-<h2>8. Advertising &amp; App Tracking Transparency</h2>
+<h2>9. Advertising &amp; App Tracking Transparency</h2>
 <p>Shelfy displays Google Mobile Ads (AdMob) to users on the free plan. Advertising and related tracking work as follows:</p>
 <ul>
 <li><strong>Ad serving:</strong> Ads are delivered by the Google Mobile Ads SDK. Shelfy Pro subscribers do not see ads.</li>
@@ -242,10 +274,10 @@ th { background: var(--cream); font-weight: 600; }
 </ul>
 <p>Shelfy does not use Firebase Analytics for ad targeting.</p>
 <hr />
-<h2>9. Changes to This Policy</h2>
+<h2>10. Changes to This Policy</h2>
 <p>We may update this Privacy Policy from time to time. The effective date at the top of this document will always reflect the latest version. Material changes will also be announced inside the app.</p>
 <hr />
-<h2>10. Contact</h2>
+<h2>11. Contact</h2>
 <p>For privacy questions or requests:</p>
 <ul>
 <li><strong>Email:</strong> yongjin.dev@gmail.com</li>
