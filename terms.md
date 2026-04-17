@@ -2,7 +2,7 @@
 
 **App:** Shelfy
 **Developer:** Kim Yongjin (individual developer, South Korea)
-**Contact:** anfy5118@gmail.com
+**Contact:** yongjin.dev@gmail.com
 **Effective date:** April 18, 2026
 
 ---
@@ -120,7 +120,7 @@ These Terms are governed by the laws of the Republic of Korea. Any dispute arisi
 
 For questions about these Terms, please contact:
 
-- **Email:** anfy5118@gmail.com
+- **Email:** yongjin.dev@gmail.com
 - **Developer:** Kim Yongjin
 
 Last updated: April 18, 2026.

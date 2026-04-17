@@ -2,7 +2,7 @@
 
 **App:** Shelfy
 **Developer:** Kim Yongjin (individual developer, South Korea)
-**Contact:** anfy5118@gmail.com
+**Contact:** yongjin.dev@gmail.com
 **Effective date:** April 18, 2026
 
 ---
@@ -143,7 +143,7 @@ You have the right to:
 - Request deletion of server-side data tied to your UID.
 - Request restriction of processing.
 
-To exercise these rights, email **anfy5118@gmail.com** with the UID shown in the app's settings/about page. We respond within 30 days.
+To exercise these rights, email **yongjin.dev@gmail.com** with the UID shown in the app's settings/about page. We respond within 30 days.
 
 On-device data can be removed at any time by uninstalling Shelfy or clearing the app's storage.
 
@@ -151,7 +151,7 @@ On-device data can be removed at any time by uninstalling Shelfy or clearing the
 
 ## 7. Children's Privacy
 
-Shelfy is not directed to children under the age of 14 (in line with South Korea's Personal Information Protection Act). We do not knowingly collect personal information from children under 14. If you believe a child under 14 has used the app, please contact anfy5118@gmail.com and we will delete any associated data.
+Shelfy is not directed to children under the age of 14 (in line with South Korea's Personal Information Protection Act). We do not knowingly collect personal information from children under 14. If you believe a child under 14 has used the app, please contact yongjin.dev@gmail.com and we will delete any associated data.
 
 ---
 
@@ -178,7 +178,7 @@ We may update this Privacy Policy from time to time. The effective date at the t
 
 For privacy questions or requests:
 
-- **Email:** anfy5118@gmail.com
+- **Email:** yongjin.dev@gmail.com
 - **Developer:** Kim Yongjin
 - **Postal address:** 30-6 Bakdong-gil, Osan-si, Gyeonggi-do, Republic of Korea
 
