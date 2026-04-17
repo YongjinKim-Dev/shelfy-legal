@@ -180,6 +180,5 @@ For privacy questions or requests:
 
 - **Email:** yongjin.dev@gmail.com
 - **Developer:** Kim Yongjin
-- **Postal address:** 30-6 Bakdong-gil, Osan-si, Gyeonggi-do, Republic of Korea
 
 Last updated: April 18, 2026.
