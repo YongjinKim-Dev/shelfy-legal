@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shelfy · Legal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FFF8F0;
+    --ink: #1F2937;
+    --gray-700: #4B5563;
+    --gray-600: #6B7280;
+    --gray-200: #E5E7EB;
+    --accent: #C27852;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+  }
+  .wrap {
+    max-width: 560px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid var(--gray-200);
+    border-radius: 20px;
+    padding: 48px 40px;
+    text-align: center;
+  }
+  .logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -0.02em;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: var(--gray-600);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .links a {
+    display: block;
+    padding: 16px 20px;
+    background: var(--cream);
+    border: 1px solid var(--gray-200);
+    border-radius: 12px;
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 150ms;
+  }
+  .links a:hover, .links a:focus-visible {
+    border-color: var(--accent);
+    color: var(--accent);
+    outline: none;
+  }
+  .meta {
+    margin-top: 36px;
+    font-size: 12px;
+    color: var(--gray-600);
+    line-height: 1.7;
+  }
+  .meta a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">Shelfy</div>
+  <div class="subtitle">Legal Documents</div>
+  <div class="links">
+    <a href="./terms.html">서비스 이용약관 · Terms of Service</a>
+    <a href="./privacy.html">개인정보처리방침 · Privacy Policy</a>
+  </div>
+  <div class="meta">
+    Shelfy — Reading tracker by Kim Yongjin<br>
+    Contact: <a href="mailto:anfy5118@gmail.com">anfy5118@gmail.com</a>
+  </div>
+</div>
+</body>
+</html>
