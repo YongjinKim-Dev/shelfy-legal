@@ -139,15 +139,7 @@ th { background: var(--cream); font-weight: 600; }
 <li>Device type, OS version, app version, language</li>
 <li>Advertising identifiers are used only for advertising personalization within the scope granted by App Tracking Transparency (see section 8). Analytics events themselves are not linked to personal identifiers.</li>
 </ul>
-<h3>1-5. Crash logs (Firebase Crashlytics)</h3>
-<p>When the app crashes, Firebase Crashlytics may automatically collect:</p>
-<ul>
-<li>Stack traces and error type</li>
-<li>Device model, OS version, app version</li>
-<li>Crash timestamp</li>
-</ul>
-<p>Crash logs do not include personally identifiable information or user-generated content from inside the app.</p>
-<h3>1-6. On-device data</h3>
+<h3>1-5. On-device data</h3>
 <p>The following data is stored only on your device and is never transmitted to the Developer's servers:</p>
 <ul>
 <li>Books you add, reading session history, timer data</li>
@@ -182,10 +174,6 @@ th { background: var(--cream); font-weight: 600; }
 <td>Understanding which features are useful, planning improvements</td>
 </tr>
 <tr>
-<td>Crash logs (Crashlytics)</td>
-<td>Diagnosing and fixing bugs</td>
-</tr>
-<tr>
 <td>On-device data</td>
 <td>Core reading-tracker functionality</td>
 </tr>
@@ -210,7 +198,7 @@ th { background: var(--cream); font-weight: 600; }
 <h2>4. Service Providers &amp; Third-Party Sharing</h2>
 <p>Shelfy relies on a small number of service providers ("processors") to operate. Each provider is contractually bound to process data only for the purposes we specify:</p>
 <ul>
-<li><strong>Google / Firebase</strong> — authentication, analytics, crash reporting, remote config, cloud functions, AI (Gemini) proxy. Privacy policy: https://policies.google.com/privacy</li>
+<li><strong>Google / Firebase</strong> — authentication, analytics, remote config, cloud functions, AI (Gemini) proxy. Privacy policy: https://policies.google.com/privacy</li>
 <li><strong>RevenueCat</strong> — subscription management and receipt validation. Privacy policy: https://www.revenuecat.com/privacy</li>
 <li><strong>Apple / Google Play</strong> — payment processing for in-app purchases.</li>
 <li><strong>Google Mobile Ads (AdMob)</strong> — ad serving. Privacy policy: https://policies.google.com/technologies/ads</li>
@@ -221,7 +209,6 @@ th { background: var(--cream); font-weight: 600; }
 <ul>
 <li><strong>Cloud Functions audit logs &amp; AI metering:</strong> retained for up to 13 months, then aggregated or deleted.</li>
 <li><strong>Firebase Analytics events:</strong> retained according to your Firebase project configuration (default 14 months).</li>
-<li><strong>Crashlytics data:</strong> retained for 90 days by default.</li>
 <li><strong>RevenueCat subscription records:</strong> retained for the duration of the subscription plus the period required by tax and audit regulations.</li>
 <li><strong>On-device data:</strong> kept until you uninstall the app or clear its storage.</li>
 </ul>
