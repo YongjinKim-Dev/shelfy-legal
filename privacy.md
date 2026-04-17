@@ -1,218 +1,185 @@
-# Shelfy 개인정보 처리방침 (Privacy Policy)
+# Shelfy — Privacy Policy
 
-**앱 이름:** Shelfy
-**개발자:** Kim Yongjin (개인 개발자)
-**연락처:** anfy5118@gmail.com
-**시행일:** 2026년 4월 18일
-
----
-
-## 목차
-
-1. 수집하는 정보 (Information We Collect)
-2. 수집 목적 (Purpose of Collection)
-3. 제3자 제공 (Third-Party Sharing)
-4. 데이터 보관 기간 (Data Retention)
-5. 데이터 보호 조치 (Data Security)
-6. 이용자의 권리 (Your Rights)
-7. 아동 개인정보 (Children's Privacy)
-8. 광고 및 앱 추적 투명성 (Advertising & App Tracking Transparency)
-9. 개인정보 처리방침 변경 (Changes to This Policy)
-10. 연락처 (Contact)
+**App:** Shelfy
+**Developer:** Kim Yongjin (individual developer, South Korea)
+**Contact:** anfy5118@gmail.com
+**Effective date:** April 18, 2026
 
 ---
 
-## 1. 수집하는 정보 (Information We Collect)
+## Table of Contents
 
-Shelfy는 개인을 직접 식별하는 정보(이름, 이메일, 전화번호 등)를 수집하지 않습니다. 수집되는 정보는 서비스 제공에 필요한 최소한으로 제한됩니다.
-
-### 1-1. 익명 사용자 ID (Firebase Authentication)
-
-앱 설치 시 Firebase Authentication을 통해 익명 UID(User ID)가 자동 생성됩니다. 이 ID는 이용자를 개인으로 식별하지 않으며, 다음 용도에만 사용됩니다.
-
-- Shelfy Pro 구독 상태 확인
-- AI 기능(Gemini) 사용량 미터링
-- Cloud Functions 감사 로그(audit log) 기록
-
-### 1-2. 구독 정보 (RevenueCat)
-
-Shelfy Pro 구독 시 RevenueCat SDK가 다음 정보를 수집합니다.
-
-- RevenueCat이 생성한 익명 식별자
-- 구매 영수증 데이터(App Store 또는 Google Play 검증용)
-- 구독 상태 및 거래 이력
-
-RevenueCat은 이름, 이메일, 결제 카드 정보를 수집하지 않습니다. 실제 결제 처리는 Apple 또는 Google이 담당합니다.
-
-### 1-3. AI 사용량 미터링 (Cloud Functions)
-
-AI 대화 기능 이용 시 Firebase Cloud Functions를 통해 Google Gemini API가 호출됩니다. 이 과정에서 다음 정보가 Firestore에 기록됩니다.
-
-- 익명 UID
-- 요청 횟수 및 타임스탬프
-
-대화 내용(메시지 본문)은 서버에 저장되지 않습니다.
-
-### 1-4. 사용 분석 (Firebase Analytics)
-
-Firebase Analytics를 통해 익명 사용 패턴 데이터가 수집됩니다.
-
-- 화면 조회, 기능 사용 이벤트 등 익명 행동 데이터
-- 기기 유형, OS 버전, 앱 버전, 언어 설정
-- 광고 ID는 ATT 동의 범위 내에서만 광고 타게팅에 사용되며, Firebase Analytics 이벤트 자체에는 연결되지 않습니다.
-
-### 1-5. 충돌 로그 (Firebase Crashlytics)
-
-앱 충돌 발생 시 Firebase Crashlytics를 통해 다음 정보가 자동 수집될 수 있습니다.
-
-- 충돌 스택 트레이스 및 오류 유형
-- 기기 모델, OS 버전, 앱 버전
-- 충돌 발생 시각
-
-충돌 로그에는 이용자의 개인 식별 정보나 앱 내 콘텐츠가 포함되지 않습니다.
-
-### 1-6. 기기 로컬 데이터
-
-아래 데이터는 이용자의 기기에만 저장되며, 개발자 서버로 전송되지 않습니다.
-
-- 등록한 책, 독서 세션 기록, 독서 타이머 데이터
-- 노트 및 인용문
-- 바이브(감정) 트래킹 기록
-
-이 데이터는 개발자가 접근할 수 없으며, 앱 삭제 시 영구적으로 삭제됩니다.
+1. Information We Collect
+2. Why We Collect It
+3. Third-Party Sharing
+4. Data Retention
+5. Data Security
+6. Your Rights
+7. Children's Privacy
+8. Advertising & App Tracking Transparency
+9. Changes to This Policy
+10. Contact
 
 ---
 
-## 2. 수집 목적 (Purpose of Collection)
+## 1. Information We Collect
 
-| 수집 항목 | 수집 목적 |
+Shelfy does not collect directly identifying information (name, email, phone number). Only the minimum data needed to operate the Service is collected.
+
+### 1-1. Anonymous user ID (Firebase Authentication)
+
+When the app is first launched, Firebase Authentication generates an anonymous UID. The UID does not identify you personally and is used only for:
+
+- Verifying Shelfy Pro subscription status
+- Metering AI (Gemini) usage limits
+- Recording audit logs inside Cloud Functions
+
+### 1-2. Subscription information (RevenueCat)
+
+When you purchase Shelfy Pro, the RevenueCat SDK collects:
+
+- A RevenueCat-generated anonymous identifier
+- Purchase receipt data for validation against App Store / Google Play
+- Subscription status and transaction history
+
+RevenueCat does not receive your name, email, or payment card details. The actual payment is processed by Apple or Google.
+
+### 1-3. AI usage metering (Cloud Functions)
+
+When you use AI chat features, Firebase Cloud Functions invoke the Google Gemini API on your behalf. The following metadata is recorded in Firestore:
+
+- Anonymous UID and request timestamps
+- Token counts and model selection
+- Result status (success / error code)
+
+The prompt body and AI response bodies are not stored on our servers. They are only transmitted while the request is in flight.
+
+### 1-4. Usage analytics (Firebase Analytics)
+
+Firebase Analytics collects anonymous usage patterns:
+
+- Screen views and feature events
+- Device type, OS version, app version, language
+- Advertising identifiers are used only for advertising personalization within the scope granted by App Tracking Transparency (see section 8). Analytics events themselves are not linked to personal identifiers.
+
+### 1-5. Crash logs (Firebase Crashlytics)
+
+When the app crashes, Firebase Crashlytics may automatically collect:
+
+- Stack traces and error type
+- Device model, OS version, app version
+- Crash timestamp
+
+Crash logs do not include personally identifiable information or user-generated content from inside the app.
+
+### 1-6. On-device data
+
+The following data is stored only on your device and is never transmitted to the Developer's servers:
+
+- Books you add, reading session history, timer data
+- Notes and quotes
+- Vibe (mood) tracking records
+
+Because this data never leaves the device, the Developer cannot access it, and it is permanently deleted when you uninstall Shelfy.
+
+---
+
+## 2. Why We Collect It
+
+| Data | Purpose |
 |---|---|
-| 익명 UID (Firebase Auth) | 구독 확인, AI 사용량 제한, 감사 로그 |
-| 구독 정보 (RevenueCat) | Shelfy Pro 구독 관리 및 검증 |
-| AI 사용량 로그 (Firestore) | 무료/유료 플랜별 AI 사용량 미터링 |
-| 사용 분석 (Firebase Analytics) | 앱 개선을 위한 익명 사용 패턴 파악 |
-| 충돌 로그 (Crashlytics) | 버그 식별 및 앱 안정성 향상 |
-| 기기 로컬 데이터 | 핵심 독서 기록 기능 제공 |
+| Anonymous UID (Firebase Auth) | Subscription verification, AI quota, audit logs |
+| Subscription info (RevenueCat) | Managing and verifying Shelfy Pro |
+| AI usage logs (Firestore) | Enforcing per-plan usage limits, preventing abuse |
+| Usage analytics (Firebase Analytics) | Understanding which features are useful, planning improvements |
+| Crash logs (Crashlytics) | Diagnosing and fixing bugs |
+| On-device data | Core reading-tracker functionality |
 
-수집된 분석/로그 정보는 Shelfy의 서비스 개선 용도로만 사용됩니다. 광고 노출은 Google Mobile Ads SDK가 담당하며, 자세한 사항은 아래 8항을 참고해 주십시오.
-
----
-
-## 3. 제3자 제공 (Third-Party Sharing)
-
-Shelfy는 이용자의 개인정보를 판매하거나 임대하지 않습니다. 서비스 운영에 필요한 범위 내에서만 아래 제3자와 정보를 공유합니다.
-
-### Google / Firebase
-
-Firebase Authentication, Firestore, Analytics, Crashlytics, Cloud Functions를 운영합니다. Google은 이 데이터를 Google의 개인정보 처리방침에 따라 처리합니다.
-
-참고: [Google 개인정보 처리방침](https://policies.google.com/privacy)
-
-### RevenueCat
-
-Shelfy Pro 구독 관리를 위해 익명 구독 데이터를 공유합니다.
-
-참고: [RevenueCat 개인정보 처리방침](https://www.revenuecat.com/privacy)
-
-### Apple / Google (결제 플랫폼)
-
-인앱 구매 처리를 위해 해당 플랫폼과 결제 정보가 공유됩니다. 개발자는 결제 카드 정보에 접근하지 않습니다.
-
-- Apple: [App Store 개인정보 정책](https://www.apple.com/legal/privacy/en-ww/)
-- Google: [Google Play 개인정보 정책](https://policies.google.com/privacy)
-
-위에 열거된 제3자 이외에는 이용자 데이터를 공유하지 않습니다.
+Analytics and log data are used only to improve Shelfy. Advertising is served by Google Mobile Ads as described in section 8.
 
 ---
 
-## 4. 데이터 보관 기간 (Data Retention)
+## 3. Third-Party Sharing
 
-### 개발자가 보관하는 데이터
+Shelfy does not sell or rent personal information. We share data only with the following service providers as required to operate the app:
 
-Firebase Firestore에 저장되는 AI 사용량 로그 및 감사 로그는 서비스 운영 목적에 필요한 기간 동안 보관되며, 해당 UID와 연결된 데이터는 익명 ID 삭제 또는 계정 비활성화 시 삭제 요청을 통해 처리됩니다.
+- **Google / Firebase** (authentication, analytics, crash reporting, remote config, cloud functions, AI proxy) — https://policies.google.com/privacy
+- **RevenueCat** (subscription management and receipt validation) — https://www.revenuecat.com/privacy
+- **Apple / Google Play** (payment processing for in-app purchases)
+- **Google Mobile Ads (AdMob)** (ad serving) — https://policies.google.com/technologies/ads
 
-### 제3자가 보관하는 데이터
-
-RevenueCat, Firebase Analytics, Crashlytics가 보관하는 데이터의 보관 기간은 각 서비스의 개인정보 처리방침을 따릅니다.
-
-### 기기 로컬 데이터
-
-앱 삭제 시 기기의 모든 로컬 데이터가 영구 삭제됩니다.
+Each provider handles data under its own privacy policy; we recommend reviewing those policies for details.
 
 ---
 
-## 5. 데이터 보호 조치 (Data Security)
+## 4. Data Retention
 
-Shelfy는 수집된 정보를 보호하기 위해 아래 조치를 취합니다.
+- **Cloud Functions audit logs & AI metering:** retained for up to 13 months, then aggregated or deleted.
+- **Firebase Analytics events:** retained according to your Firebase project configuration (default 14 months).
+- **Crashlytics data:** retained for 90 days by default.
+- **RevenueCat subscription records:** retained for the duration of the subscription plus the period required by tax and audit regulations.
+- **On-device data:** kept until you uninstall the app or clear its storage.
 
-- Firebase 보안 규칙을 통한 Firestore 접근 제어
-- Cloud Functions에서의 HTTPS 암호화 통신
-- 최소 권한 원칙 적용: 기능별로 필요한 데이터만 수집
-
-다만, 인터넷을 통한 데이터 전송이나 전자적 저장 방식은 100% 보안을 보장할 수 없습니다. 중요한 개인 데이터는 앱 내에 저장하지 않도록 주의해 주십시오.
-
----
-
-## 6. 이용자의 권리 (Your Rights)
-
-이용자는 아래 권리를 행사할 수 있습니다.
-
-- **열람권:** 수집된 데이터가 무엇인지 확인 요청
-- **정정권:** 부정확한 데이터의 수정 요청
-- **삭제권:** 수집된 데이터의 삭제 요청
-- **처리 정지권:** 특정 목적의 데이터 처리 중단 요청
-
-Shelfy 자체 서버에 저장되는 데이터는 최소한이므로, 대부분의 요청은 Firebase 또는 RevenueCat 등 제3자 서비스에 직접 요청하실 수 있습니다.
-
-권리 행사 요청은 [anfy5118@gmail.com](mailto:anfy5118@gmail.com)으로 연락해 주십시오. 요청 접수 후 30일 이내에 처리합니다.
-
-본 권리는 한국 개인정보보호법 및 GDPR, CCPA 등 관련 법령에 근거합니다.
+When you request deletion (see section 6), personal records tied to the anonymous UID are removed from the Developer's servers unless retention is required by law.
 
 ---
 
-## 7. 아동 개인정보 (Children's Privacy)
+## 5. Data Security
 
-Shelfy는 만 14세 미만 아동을 대상으로 하지 않습니다. 만 14세 미만 아동으로부터 개인정보를 의도적으로 수집하지 않으며, 만 14세 미만은 Shelfy 사용이 제한됩니다.
+- All traffic between the app and Firebase / Cloud Functions is protected by HTTPS (TLS).
+- Server-side access follows the least-privilege principle. API secrets are stored in Firebase Secret Manager, not in client code.
+- Firestore security rules restrict access to authenticated UIDs. Firebase App Check protects backend endpoints from abuse.
 
-만 14세 미만 아동이 앱을 사용하고 있다고 판단되는 경우, [anfy5118@gmail.com](mailto:anfy5118@gmail.com)으로 알려주시면 즉시 적절한 조치를 취하겠습니다.
-
-(This app is not directed to children under the age of 14. We do not knowingly collect personal information from children under 14.)
-
----
-
-## 8. 광고 및 앱 추적 투명성 (Advertising & App Tracking Transparency)
-
-Shelfy는 무료 이용자에게 Google Mobile Ads(AdMob) 광고를 표시합니다. 광고 및 관련 추적은 다음과 같이 처리됩니다.
-
-- **광고 제공:** Google Mobile Ads SDK를 통해 광고가 노출됩니다. Shelfy Pro 구독 시 광고가 비활성화됩니다.
-- **App Tracking Transparency(ATT):** iOS 이용자에게는 앱 실행 시 ATT 권한 요청이 표시됩니다. 허용하지 않아도 광고는 계속 표시되지만, 맞춤형 광고는 제공되지 않습니다.
-- **IDFA / GAID:** ATT 허용 시에만 iOS 광고 식별자(IDFA) 또는 Android 광고 식별자(GAID)가 광고 타게팅에 사용됩니다. 비허용 시에는 문맥 기반 광고만 제공됩니다.
-- **광고 제공자의 개인정보 처리:** Google Mobile Ads의 데이터 처리 방침은 [Google Privacy Policy](https://policies.google.com/privacy)를 따릅니다.
-
-Firebase Analytics가 수집하는 사용 패턴 데이터는 앱 품질 개선 용도이며, Shelfy는 Firebase Analytics를 광고 타게팅 목적으로 사용하지 않습니다.
+No method of electronic storage or transmission is completely secure. We continuously monitor and improve our security controls.
 
 ---
 
-## 9. 개인정보 처리방침 변경 (Changes to This Policy)
+## 6. Your Rights
 
-본 방침은 서비스 변경, 법령 개정 등의 사유로 업데이트될 수 있습니다. 변경 시 상단의 시행일을 갱신하며, 중요한 변경이 있는 경우 앱 내 공지를 통해 이용자에게 알립니다.
+You have the right to:
 
-변경된 방침은 시행일부터 효력이 발생하며, 이후에도 앱을 계속 사용하면 변경된 방침에 동의한 것으로 간주됩니다.
+- Request access to data we hold that is linked to your anonymous UID.
+- Request correction of inaccurate data.
+- Request deletion of server-side data tied to your UID.
+- Request restriction of processing.
 
----
+To exercise these rights, email **anfy5118@gmail.com** with the UID shown in the app's settings/about page. We respond within 30 days.
 
-## 10. 연락처 (Contact)
-
-개인정보 처리방침 관련 문의, 권리 행사 요청, 기타 문의는 아래로 연락해 주십시오.
-
-**Kim Yongjin**
-독립 개발자 (Individual Developer)
-이메일: [anfy5118@gmail.com](mailto:anfy5118@gmail.com)
+On-device data can be removed at any time by uninstalling Shelfy or clearing the app's storage.
 
 ---
 
-*본 개인정보 처리방침은 2026년 4월 18일부터 시행됩니다.*
+## 7. Children's Privacy
 
-*Effective Date: April 18, 2026*
+Shelfy is not directed to children under the age of 14 (in line with South Korea's Personal Information Protection Act). We do not knowingly collect personal information from children under 14. If you believe a child under 14 has used the app, please contact anfy5118@gmail.com and we will delete any associated data.
 
-*© 2026 Kim Yongjin. All rights reserved.*
+---
+
+## 8. Advertising & App Tracking Transparency
+
+Shelfy displays Google Mobile Ads (AdMob) to users on the free plan. Advertising and related tracking work as follows:
+
+- **Ad serving:** Ads are delivered by the Google Mobile Ads SDK. Shelfy Pro subscribers do not see ads.
+- **App Tracking Transparency (ATT):** On iOS, the system ATT permission prompt is shown at app launch. If you decline, ads still appear but are non-personalized (contextual only).
+- **IDFA / GAID:** iOS IDFA and Android advertising ID are used for ad personalization only when you have granted ATT permission on iOS, or have not opted out of personalized ads on Android.
+- **Third-party data handling:** Google Mobile Ads processes data under the [Google Privacy Policy](https://policies.google.com/privacy) and [Google Ads Policies](https://policies.google.com/technologies/ads).
+
+Shelfy does not use Firebase Analytics for ad targeting.
+
+---
+
+## 9. Changes to This Policy
+
+We may update this Privacy Policy from time to time. The effective date at the top of this document will always reflect the latest version. Material changes will also be announced inside the app.
+
+---
+
+## 10. Contact
+
+For privacy questions or requests:
+
+- **Email:** anfy5118@gmail.com
+- **Developer:** Kim Yongjin
+- **Postal address:** 30-6 Bakdong-gil, Osan-si, Gyeonggi-do, Republic of Korea
+
+Last updated: April 18, 2026.
