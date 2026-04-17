@@ -16,7 +16,7 @@
 5. 데이터 보호 조치 (Data Security)
 6. 이용자의 권리 (Your Rights)
 7. 아동 개인정보 (Children's Privacy)
-8. 광고 추적 안 함 (Privacy Manifest & App Tracking Transparency)
+8. 광고 및 앱 추적 투명성 (Advertising & App Tracking Transparency)
 9. 개인정보 처리방침 변경 (Changes to This Policy)
 10. 연락처 (Contact)
 
@@ -59,7 +59,7 @@ Firebase Analytics를 통해 익명 사용 패턴 데이터가 수집됩니다.
 
 - 화면 조회, 기능 사용 이벤트 등 익명 행동 데이터
 - 기기 유형, OS 버전, 앱 버전, 언어 설정
-- 광고 ID 또는 개인 식별자와는 연결되지 않습니다.
+- 광고 ID는 ATT 동의 범위 내에서만 광고 타게팅에 사용되며, Firebase Analytics 이벤트 자체에는 연결되지 않습니다.
 
 ### 1-5. 충돌 로그 (Firebase Crashlytics)
 
@@ -94,7 +94,7 @@ Firebase Analytics를 통해 익명 사용 패턴 데이터가 수집됩니다.
 | 충돌 로그 (Crashlytics) | 버그 식별 및 앱 안정성 향상 |
 | 기기 로컬 데이터 | 핵심 독서 기록 기능 제공 |
 
-수집된 정보는 광고 목적 또는 제3자 마케팅에 사용되지 않습니다.
+수집된 분석/로그 정보는 Shelfy의 서비스 개선 용도로만 사용됩니다. 광고 노출은 Google Mobile Ads SDK가 담당하며, 자세한 사항은 아래 8항을 참고해 주십시오.
 
 ---
 
@@ -180,16 +180,16 @@ Shelfy는 만 14세 미만 아동을 대상으로 하지 않습니다. 만 14세
 
 ---
 
-## 8. 광고 추적 안 함 (Privacy Manifest & App Tracking Transparency)
+## 8. 광고 및 앱 추적 투명성 (Advertising & App Tracking Transparency)
 
-Shelfy는 광고 목적의 추적을 수행하지 않습니다.
+Shelfy는 무료 이용자에게 Google Mobile Ads(AdMob) 광고를 표시합니다. 광고 및 관련 추적은 다음과 같이 처리됩니다.
 
-- **광고 미노출:** Shelfy는 광고를 표시하지 않으며, 광고 네트워크 SDK를 사용하지 않습니다.
-- **크로스앱 추적 없음:** 다른 앱이나 웹사이트에서의 이용자 행동을 추적하지 않습니다.
-- **IDFA 미사용:** iOS 광고 식별자(IDFA) 또는 Android 광고 식별자(GAID)를 광고 목적으로 수집하거나 사용하지 않습니다.
-- **ATT 비해당:** 광고 추적을 수행하지 않으므로 App Tracking Transparency(앱 추적 투명성) 동의 요청을 표시하지 않습니다.
+- **광고 제공:** Google Mobile Ads SDK를 통해 광고가 노출됩니다. Shelfy Pro 구독 시 광고가 비활성화됩니다.
+- **App Tracking Transparency(ATT):** iOS 이용자에게는 앱 실행 시 ATT 권한 요청이 표시됩니다. 허용하지 않아도 광고는 계속 표시되지만, 맞춤형 광고는 제공되지 않습니다.
+- **IDFA / GAID:** ATT 허용 시에만 iOS 광고 식별자(IDFA) 또는 Android 광고 식별자(GAID)가 광고 타게팅에 사용됩니다. 비허용 시에는 문맥 기반 광고만 제공됩니다.
+- **광고 제공자의 개인정보 처리:** Google Mobile Ads의 데이터 처리 방침은 [Google Privacy Policy](https://policies.google.com/privacy)를 따릅니다.
 
-Firebase Analytics가 수집하는 데이터는 앱 내 분석에만 사용되며, 광고 타게팅에 사용되지 않습니다.
+Firebase Analytics가 수집하는 사용 패턴 데이터는 앱 품질 개선 용도이며, Shelfy는 Firebase Analytics를 광고 타게팅 목적으로 사용하지 않습니다.
 
 ---
 
